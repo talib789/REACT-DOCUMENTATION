@@ -22,9 +22,9 @@ The majority of websites aren’t, and don’t need to be, single-page apps. Wit
 ## React.createElement () Method: The React.createElement () method is used to create elements. Whenever we write code in JSX, JSX converts it to React.createElement (). The createElement method is not recommended to use as it is very hard to maintain or debug.
 # What are the three properties that createElement accept?
 ## const element = React.createElement('div', {id: 'login-btn'}, 'Login') createElement takes in three arguments. The first is a tag name string (div, span, etc), the second is any attributes you want the element to have, the third is the contents or the children of the element, in this case, the text "Login".
- 
-# React renders HTML to the web page by using a function called render().
-## The purpose of the function is to display the specified HTML code inside the specified HTML element.
+# What is the meaning of render and root?
+## React renders HTML to the web page by using a function called render().
+ The purpose of the function is to display the specified HTML code inside the specified HTML element.
 In the render() method, we can read props and state and return our JSX code to the root component of our app.
 In the render() method, we cannot change the state, and we cannot cause side effects( such as making an HTTP request to the webserver).
 Root The root element is the passed to the ReactDom. "... The React tree is: a tree composed of React elements that implements a virtual DOM system where only the updates are applied to the real DOM (browser DOM) Structure React element
